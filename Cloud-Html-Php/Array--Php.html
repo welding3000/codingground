@@ -1,0 +1,490 @@
+<hr>
+<hr>
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- ----------------------  start  ------------------------ -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<div id='cont'>
+  <div id='head'>
+    <!-- -------------------------------- -->
+    <h1>Arrays</h1>
+    <!-- -------------------------------- -->
+  </div>
+</div>
+<div id='rot'>
+  <article>
+    <h2>Resultado</h2>
+    <div>
+      <h3>PHP - Answer</h3>
+      <!-- ------ start text ------ -->
+      <div id='very'>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <h1>Arrays</h1>
+        <p>An array stores multiple values in one single variable</p>
+        <script>
+           str = ' <i> I like Volvo, BMW and Toyota </i> '
+           document.write(str)
+        </script>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- ------ end text -------- -->
+      </div>
+    </div>
+  </article>
+  <article>
+    <h2>Codigo</h2>
+    <div>
+      <h3>HTML</h3>
+      <!-- ------ start text ------ -->
+      <pre id='gray'>&lt;body>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;h1>Arrays&lt;/h1>
+      &lt;p>An array stores multiple values in one single variable:&lt;/p>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;/body></pre>
+      <!-- ------ end html -------- -->
+      <hr>
+      <!-- ------ begin -------- -->
+      <h3>PHP</h3>
+      <!-- ------ start js -------- -->
+      <pre id='gray'>&lt;?php
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      $cars = array("Volvo", "BMW", "Toyota");
+      echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".";
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      ?></pre>
+    </div>
+  </article>
+</div>
+<hr>
+<hr>
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- -----------------------  end  ------------------------- -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- ----------------------  start  ------------------------ -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<div id='cont'>
+  <div id='head'>
+    <!-- -------------------------------- -->
+    <h1>What is an Array?</h1>
+    <!-- -------------------------------- -->
+  </div>
+</div>
+<div id='rot'>
+  <article>
+    <h2>Resultado</h2>
+    <div>
+      <h3>PHP - Answer</h3>
+      <!-- ------ start text ------ -->
+      <div id='very'>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <p>An array is a special variable, which can hold more than one value at a time</p>
+        <p>If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:</p>
+        <script>
+          str1= '<i> Volvo'+ '<br>' + 'BMW' +'<br>'+'Toyota </i> ' 
+           document.write(str1 )
+        </script>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- ------ end text -------- -->
+      </div>
+    </div>
+  </article>
+  <article>
+    <h2>Codigo</h2>
+    <div>
+      <h3>HTML</h3>
+      <!-- ------ start text ------ -->
+      <pre id='gray'>&lt;body>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;p> An array is a special variable, which can hold more than one value at a time &lt;/p>
+      &lt;p> If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;/body></pre>
+      <!-- ------ end html -------- -->
+      <hr>
+      <!-- ------ begin -------- -->
+      <h3>PHP</h3>
+      <!-- ------ start js -------- -->
+      <pre id='gray'>&lt;?php
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      $cars1 = "Volvo";
+      $cars2 = "BMW";
+      $cars3 = "Toyota";
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      ?></pre>
+    </div>
+  </article>
+</div>
+<hr>
+<hr>
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- -----------------------  end  ------------------------- -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- ----------------------  start  ------------------------ -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<div id='cont'>
+  <div id='head'>
+    <!-- -------------------------------- -->
+    <h1>PHP Indexed Arrays</h1>
+    <!-- -------------------------------- -->
+  </div>
+</div>
+<div id='rot'>
+  <article>
+    <h2>Resultado</h2>
+    <div>
+      <h3>PHP - Answer</h3>
+      <!-- ------ start text ------ -->
+      <div id='very'>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <h1>PHP Indexed Arrays</h1>
+        <p>There are two ways to create indexed arrays:</p>
+        <p>The index can be assigned automatically (index always starts at 0), like this:</p>
+        <script>
+          str2= ' <i> I like Volvo, BMW and Toyota</i>' 
+            document.write(str2 );
+        </script>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- ------ end text -------- -->
+      </div>
+    </div>
+  </article>
+  <article>
+    <h2>Codigo</h2>
+    <div>
+      <h3>HTML</h3>
+      <!-- ------ start text ------ -->
+      <pre id='gray'>&lt;body>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;h1> PHP Indexed Arrays  &lt;h1>
+      &lt;p>  There are two ways to create indexed arrays:   &lt;/p>
+      &lt;p>  The index can be assigned automatically (index always starts at 0), like this:   &lt;/p>
+      &lt;!--
+      $cars = array("Volvo", "BMW", "Toyota");
+      $cars[0] = "Volvo";
+      $cars[1] = "BMW";
+      $cars[2] = "Toyota";
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;/body></pre>
+      <!-- ------ end html -------- -->
+      <hr>
+      <!-- ------ begin -------- -->
+      <h3>PHP</h3>
+      <!-- ------ start js -------- -->
+      <pre id='gray'>&lt;?php
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      $cars = array("Volvo", "BMW", "Toyota");
+      echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".";
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      ?></pre>
+    </div>
+  </article>
+</div>
+<hr>
+<hr>
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- -----------------------  end  ------------------------- -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- ----------------------  start  ------------------------ -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<div id='cont'>
+  <div id='head'>
+    <!-- -------------------------------- -->
+    <h1>Length of an Array</h1>
+    <!-- -------------------------------- -->
+  </div>
+</div>
+<div id='rot'>
+  <article>
+    <h2>Resultado</h2>
+    <div>
+      <h3>PHP - Answer</h3>
+      <!-- ------ start text ------ -->
+      <div id='very'>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <h1>Get The Length of an Array - The count() Function</h1>
+        <p>The count() function is used to return the length (the number of elements) of an array</p>
+        <script>
+          str3= 3 ;
+           document.write(str3 );
+        </script>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- ------ end text -------- -->
+      </div>
+    </div>
+  </article>
+  <article>
+    <h2>Codigo</h2>
+    <div>
+      <h3>HTML</h3>
+      <!-- ------ start text ------ -->
+      <pre id='gray'>&lt;body>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;h1>  Get The Length of an Array - The count() Function  &lt;h1>
+      &lt;p> The count() function is used to return the length (the number of elements) of an array    &lt;/p>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;/body></pre>
+      <!-- ------ end html -------- -->
+      <hr>
+      <!-- ------ begin -------- -->
+      <h3>PHP</h3>
+      <!-- ------ start js -------- -->
+      <pre id='gray'>&lt;?php
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      $cars = array("Volvo", "BMW", "Toyota");
+      echo count($cars);
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      ?></pre>
+    </div>
+  </article>
+</div>
+<hr>
+<hr>
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- -----------------------  end  ------------------------- -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- ----------------------  start  ------------------------ -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<div id='cont'>
+  <div id='head'>
+    <!-- -------------------------------- -->
+    <h1>Loop Through an Indexed Array</h1>
+    <!-- -------------------------------- -->
+  </div>
+</div>
+<div id='rot'>
+  <article>
+    <h2>Resultado</h2>
+    <div>
+      <h3>PHP - Answer</h3>
+      <!-- ------ start text ------ -->
+      <div id='very'>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <h1>Loop Through an Indexed Array</h1>
+        <script>
+          str4= ' <i>Volvo<br> BMW <br>Toyota <br> </i>' ;
+           document.write(str4 );
+        </script>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- ------ end text -------- -->
+      </div>
+    </div>
+  </article>
+  <article>
+    <h2>Codigo</h2>
+    <div>
+      <h3>HTML</h3>
+      <!-- ------ start text ------ -->
+      <pre id='gray'>&lt;body>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;h1>  Loop Through an Indexed Array  &lt;h1>
+      &lt;p>     &lt;/p>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;/body></pre>
+      <!-- ------ end html -------- -->
+      <hr>
+      <!-- ------ begin -------- -->
+      <h3>PHP</h3>
+      <!-- ------ start js -------- -->
+      <pre id='gray'>&lt;?php
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      $cars = array("Volvo", "BMW", "Toyota");
+      $arrlength = count($cars);
+      for ($x = 0; $x &lt; $arrlength; $x++) {
+      echo $cars[$x];
+      echo "&lt;br>";
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      ?></pre>
+    </div>
+  </article>
+</div>
+<hr>
+<hr>
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- -----------------------  end  ------------------------- -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- ----------------------  start  ------------------------ -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<div id='cont'>
+  <div id='head'>
+    <!-- -------------------------------- -->
+    <h1>PHP Associative Arrays</h1>
+    <!-- -------------------------------- -->
+  </div>
+</div>
+<div id='rot'>
+  <article>
+    <h2>Resultado</h2>
+    <div>
+      <h3>PHP - Answer</h3>
+      <!-- ------ start text ------ -->
+      <div id='very'>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <h1>PHP Associative Arrays</h1>
+        <p>Associative arrays are arrays that use named keys that you assign to them.</p>
+        <p>There are two ways to create an associative array:</p>
+        <script>
+          str5= ' <i> Peter is 35 years old </i>' ;
+           document.write( str5 );
+        </script>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- ------ end text -------- -->
+      </div>
+    </div>
+  </article>
+  <article>
+    <h2>Codigo</h2>
+    <div>
+      <h3>HTML</h3>
+      <!-- ------ start text ------ -->
+      <pre id='gray'>&lt;body>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;h1> PHP Associative Arrays  &lt;h1>
+      &lt;p>  Associative arrays are arrays that use named keys that you assign to them  &lt;/p>
+      &lt;p>  There are two ways to create an associative array:   &lt;/p>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;/body></pre>
+      <!-- ------ end html -------- -->
+      <hr>
+      <!-- ------ begin -------- -->
+      <h3>PHP</h3>
+      <!-- ------ start js -------- -->
+      <pre id='gray'>&lt;?php
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+      echo "Peter is " . $age['Peter'] . " years old.";
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      ?></pre>
+    </div>
+  </article>
+</div>
+<hr>
+<hr>
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- -----------------------  end  ------------------------- -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- ----------------------  start  ------------------------ -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<div id='cont'>
+  <div id='head'>
+    <!-- -------------------------------- -->
+    <h1>PHP Associative Arrays</h1>
+    <!-- -------------------------------- -->
+  </div>
+</div>
+<div id='rot'>
+  <article>
+    <h2>Resultado</h2>
+    <div>
+      <h3>PHP - Answer</h3>
+      <!-- ------ start text ------ -->
+      <div id='very'>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <h1>PHP Associative Arrays</h1>
+        <p>Associative arrays are arrays that use named keys that you assign to them.</p>
+        <p>There are two ways to create an associative array:</p>
+        <script>
+          str6= ' <i>Peter is 35 years old </i> ' ;
+           document.write( str6 );
+        </script>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- ------ end text -------- -->
+      </div>
+    </div>
+  </article>
+  <article>
+    <h2>Codigo</h2>
+    <div>
+      <h3>HTML</h3>
+      <!-- ------ start text ------ -->
+      <pre id='gray'>&lt;body>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;h1> PHP Associative Arrays  &lt;h1>
+      &lt;p>  Associative arrays are arrays that use named keys that you assign to them  &lt;/p>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;/body></pre>
+      <!-- ------ end html -------- -->
+      <hr>
+      <!-- ------ begin -------- -->
+      <h3>PHP</h3>
+      <!-- ------ start js -------- -->
+      <pre id='gray'>&lt;?php
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+      echo "Peter is " . $age['Peter'] . " years old.";
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      ?></pre>
+    </div>
+  </article>
+</div>
+<hr>
+<hr>
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- -----------------------  end  ------------------------- -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- ----------------------  start  ------------------------ -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<div id='cont'>
+  <div id='head'>
+    <!-- -------------------------------- -->
+    <h1>Loop Through an Associative Array</h1>
+    <!-- -------------------------------- -->
+  </div>
+</div>
+<div id='rot'>
+  <article>
+    <h2>Resultado</h2>
+    <div>
+      <h3>PHP - Answer</h3>
+      <!-- ------ start text ------ -->
+      <div id='very'>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <h1>Loop Through an Associative Array</h1>
+        <p>To loop through and print all the values of an associative array, you could use a foreach loop,like this</p>
+        <script>
+          str7= ' <i>   Key=Peter, Value=35 <br> Key=Ben, Value=37 <br> Key=Joe, Value=43   </i> ' ;
+           document.write( str7 );
+        </script>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- ------ end text -------- -->
+      </div>
+    </div>
+  </article>
+  <article>
+    <h2>Codigo</h2>
+    <div>
+      <h3>HTML</h3>
+      <!-- ------ start text ------ -->
+      <pre id='gray'>&lt;body>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;h1> Loop Through an Associative Array  &lt;h1>
+      &lt;p> To loop through and print all the values of an associative array, you could use a foreach loop,like this   &lt;/p>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;/body></pre>
+      <!-- ------ end html -------- -->
+      <hr>
+      <!-- ------ begin -------- -->
+      <h3>PHP</h3>
+      <!-- ------ start js -------- -->
+      <pre id='gray'>&lt;?php
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+      foreach($age as $x => $x_value) {
+      echo "Key=" . $x . ", Value=" . $x_value;
+      echo "&lt;br>";
+      }
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      ?></pre>
+    </div>
+  </article>
+</div>
+<hr>
+<hr>
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- -----------------------  end  ------------------------- -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
