@@ -1,0 +1,322 @@
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1  Functions
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        %h1 PHP User Defined Functions
+        %p  Besides the built-in PHP functions, we can create our own functions
+        %p  A function is a block of statements that can be used repeatedly in a program
+        %p  A function will not execute immediately when a page loads
+        %p  A function will be executed by a call to the function    
+
+        :javascript
+           str = ' <i>   Hello world!       </i> '
+            document.write(str) 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1> PHP User Defined Functions &lt;/h1>
+        &lt;p>  Besides the built-in PHP functions, we can create our own functions&lt;/p>
+        &lt;p>  A function is a block of statements that can be used repeatedly in a program&lt;/p>
+        &lt;p>  A function will not execute immediately when a page loads&lt;/p>
+        &lt;p>  A function will be executed by a call to the function &lt;/p>  
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+        function writeMsg() {
+        echo "Hello world!";
+        }
+        /
+        writeMsg();     
+
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1  Function Arguments
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        %h1 PHP Function Arguments
+        %p Information can be passed to functions through arguments. An argument is just like a variable.
+        %p Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma
+        %p The following example has a function with one argument ($fname). When the familyName() function is called, we also pass along a name (e.g. Jani), and the name is used inside the function, which outputs several different first names, but an equal last name: 
+
+        :javascript
+           str1 = ' <i> Jani Refsnes.<br>Hege Refsnes.<br>Stale Refsnes.<br>Kai Jim Refsnes.<br>Borge Refsnes.<br>       </i> '
+            document.write(str1) 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1>  PHP Function Arguments
+        &lt;p>  Information can be passed to functions through arguments. An argument is just like a variable. &lt;/p>
+        &lt;p>  Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma &lt;/p>
+        &lt;p>  The following example has a function with one argument ($fname). When the familyName() function is called, we also pass along a name (e.g. Jani), and the name is used inside the function, which outputs several different first names, but an equal last name:   &lt;/p>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+        function familyName($fname) {
+        echo "$fname Refsnes.&lt;br>";
+        }
+        /
+        familyName("Jani");
+        familyName("Hege");
+        familyName("Stale");
+        familyName("Kai Jim");
+        familyName("Borge");        
+
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1  function with two arguments ($fname and $year)
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        %h1 
+        %p  
+
+        :javascript
+           str2 = ' <i>   Hege Refsnes. Born in 1975 <br>Stale Refsnes. Born in 1978 <br> Kai Jim Refsnes. Born in 1983  <br>       </i> '
+            document.write(str2) 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1>   &lt;/h1>
+        &lt;p>    &lt;/p>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+        function familyName($fname, $year) {
+        echo "$fname Refsnes. Born in $year &lt;br>";
+        }
+        /
+        familyName("Hege","1975");
+        familyName("Stale","1978");
+        familyName("Kai Jim","1983");
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1  PHP Default Argument Value
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        %h1 PHP Default Argument Value
+        %p  The following example shows how to use a default parameter. If we call the function setHeight() without arguments it takes the defaultvalue as argument
+
+        :javascript
+           str3 = ' <i>  The height is : 350 <br> The height is : 50  <br> The height is : 135 <br> The height is : 80    </i> '
+            document.write(str3) 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1> PHP Default Argument Value  &lt;/h1>
+        &lt;p>  The following example shows how to use a default parameter. If we call the function setHeight() without arguments it takes the defaultvalue as argument  &lt;/p>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+        function setHeight($minheight = 50) {
+        echo "The height is : $minheight &lt;br>";
+        }
+        /
+        setHeight(350);
+        setHeight();
+        setHeight(135);
+        setHeight(80);     
+
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1  PHP Functions - Returning values
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        %h1 PHP Functions - Returning values
+        %p  
+
+        :javascript
+           str4 = ' <i>    5 + 10 = 15 <br> 7 + 13 = 20 <br> 2 + 4 = 6      </i> '
+            document.write(str4) 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1> PHP Functions - Returning values  &lt;/h1>
+        &lt;p>    &lt;/p>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+      
+        function sum($x, $y) {
+        $z = $x + $y;
+        return $z;
+        }
+        /
+        echo "5 + 10 = " . sum(5,10) . "&lt;br>";
+        echo "7 + 13 = " . sum(7,13) . "&lt;br>";
+        echo "2 + 4 = " . sum(2,4);
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
