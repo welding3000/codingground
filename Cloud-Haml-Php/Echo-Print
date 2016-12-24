@@ -1,0 +1,247 @@
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1  echo and print Statements
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        %h1 PHP 5 echo and print Statements
+        %p  In PHP there are two basic ways to get output: echo and print
+        %p  The differences are small: echo has no return value while print has a return value of 1 so it can be used in expressions
+        
+        %p  The echo statement can be used with or without parentheses: echo or echo() 
+
+        :javascript
+           str = ' <i> <h2>PHP is Fun!</h2><br>Hello world!<br> Im about to learn PHP!<br>This string was made with multiple parameters  </i> '
+            document.write(str) 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1>   &lt;/h1>
+        &lt;p>    &lt;/p>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+        echo "&lt;h2>PHP is Fun!&lt;/h2>";
+        echo "Hello world!&lt;br>";
+        echo "I'm about to learn PHP!&lt;br>";
+        echo "This ", "string ", "was ", "made ", "with multiple parameters.";        
+
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1  Display Variables
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        %h1 
+        %p  
+
+        :javascript
+           str1 = ' <i>  <h2>Learn PHP</h2>  Study PHP at W3Schools.com <br> 9  </i> '
+            document.write(str1) 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1>   &lt;/h1>
+        &lt;p>    &lt;/p>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+        $txt1 = "Learn PHP";
+        $txt2 = "W3Schools.com";
+        $x = 5;
+        $y = 4;
+        /
+        echo "&lt;h2>" . $txt1 . "&lt;/h2>";
+        echo "Study PHP at " . $txt2 . "&lt;br>";
+        echo $x + $y;      
+
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1  The PHP print Statement
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        %h1 The PHP print Statement
+        %p  The print statement can be used with or without parentheses: print or print()
+
+        :javascript
+           str2 = ' <i>    PHP is Fun! <br> Hello world! <br> Im about to learn PHP!   </i> '
+           document.write(str2) 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1> The PHP print Statement  &lt;/h1>
+        &lt;p>  The print statement can be used with or without parentheses: print or print()  &lt;/p>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+        print "&lt;h2>PHP is Fun!&lt;/h2>";
+        print "Hello world!&lt;br>";
+        print "I'm about to learn PHP!";        
+
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1  Display Variables
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        %h1 
+        %p  
+
+        :javascript
+           str3 = ' <i> NOTICE Undefined variable: txt1 on line number 11 <br> Study PHP at W3Schools.com <br> 9   </i> '
+           document.write(str3) 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1>   &lt;/h1>
+        &lt;p>    &lt;/p>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+        $txt1 = "Learn PHP";
+        $txt2 = "W3Schools.com";
+        $x = 5;
+        $y = 4;
+        /
+        print "&lt;h2>" . $txt1 . "&lt;/h2>";
+        print "Study PHP at " . $txt2 . "&lt;br>";
+        print $x + $y;        
+
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
