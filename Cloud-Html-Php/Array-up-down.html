@@ -1,0 +1,663 @@
+<hr>
+<hr>
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- ----------------------  start  ------------------------ -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<div id='cont'>
+  <div id='head'>
+    <!-- -------------------------------- -->
+    <h1>Ascending string Order</h1>
+    <!-- -------------------------------- -->
+  </div>
+</div>
+<div id='rot'>
+  <article>
+    <h2>Resultado</h2>
+    <div>
+      <h3>PHP - Answer</h3>
+      <!-- ------ start text ------ -->
+      <div id='very'>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <h1>Sort Array in Ascending Order - sort()</h1>
+        <p>In this chapter, we will go through the following PHP array sort functions:</p>
+        <script>
+           str8 = ' <i> BMW<br>Toyota<br>Volvo      </i> '
+           document.write(str8)
+        </script>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- ------ end text -------- -->
+      </div>
+    </div>
+  </article>
+  <article>
+    <h2>Codigo</h2>
+    <div>
+      <h3>HTML</h3>
+      <!-- ------ start text ------ -->
+      <pre id='gray'>&lt;body>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;h1>   Sort Array in Ascending Order - sort()     &lt;/h1>
+      &lt;p>In this chapter, we will go through the following PHP array sort functions:&lt;/p>
+      sort()   - sort arrays in ascending order
+      rsort()  - sort arrays in descending order
+      asort()  - sort associative arrays in ascending order, according to the value
+      ksort()  - sort associative arrays in ascending order, according to the key
+      arsort() - sort associative arrays in descending order, according to the value
+      krsort() - sort associative arrays in descending order, according to the key
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;/body></pre>
+      <!-- ------ end html -------- -->
+      <hr>
+      <!-- ------ begin -------- -->
+      <h3>PHP</h3>
+      <!-- ------ start js -------- -->
+      <pre id='gray'>&lt;?php
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      $cars = array("Volvo", "BMW", "Toyota");
+      sort($cars);
+      $clength = count($cars);
+      <!--  -->
+      for($x = 0; $x &lt; $clength; $x++) {
+      <!--  -->
+      echo $cars[$x];
+      echo "&lt;br>";
+      }
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      ?></pre>
+    </div>
+  </article>
+</div>
+<hr>
+<hr>
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- -----------------------  end  ------------------------- -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- ----------------------  start  ------------------------ -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<div id='cont'>
+  <div id='head'>
+    <!-- -------------------------------- -->
+    <h1>ascending numerical order</h1>
+    <!-- -------------------------------- -->
+  </div>
+</div>
+<div id='rot'>
+  <article>
+    <h2>Resultado</h2>
+    <div>
+      <h3>PHP - Answer</h3>
+      <!-- ------ start text ------ -->
+      <div id='very'>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <h1>ascending numerical order</h1>
+        <p>The following example sorts the elements of the $numbers array in ascending numerical order</p>
+        <script>
+           str9 = ' <i>  2 <br> 4<br> 6 <br>11<br> 22     </i> '
+           document.write(str9)
+        </script>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- ------ end text -------- -->
+      </div>
+    </div>
+  </article>
+  <article>
+    <h2>Codigo</h2>
+    <div>
+      <h3>HTML</h3>
+      <!-- ------ start text ------ -->
+      <pre id='gray'>&lt;body>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;h1>  ascending numerical order      &lt;/h1>
+      &lt;p>   The following example sorts the elements of the $numbers array in ascending numerical order      &lt;/p>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;/body></pre>
+      <!-- ------ end html -------- -->
+      <hr>
+      <!-- ------ begin -------- -->
+      <h3>PHP</h3>
+      <!-- ------ start js -------- -->
+      <pre id='gray'>&lt;?php
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      $numbers = array(4, 6, 2, 22, 11);
+      sort($numbers);
+      $arrlength = count($numbers);
+      <!--  -->
+      for($x = 0; $x &lt; $arrlength; $x++) {
+      <!--  -->
+      echo $numbers[$x];
+      echo "&lt;br>";
+      }
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      ?></pre>
+    </div>
+  </article>
+</div>
+<hr>
+<hr>
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- -----------------------  end  ------------------------- -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- ----------------------  start  ------------------------ -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<div id='cont'>
+  <div id='head'>
+    <!-- -------------------------------- -->
+    <h1>Descending Order string</h1>
+    <!-- -------------------------------- -->
+  </div>
+</div>
+<div id='rot'>
+  <article>
+    <h2>Resultado</h2>
+    <div>
+      <h3>PHP - Answer</h3>
+      <!-- ------ start text ------ -->
+      <div id='very'>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <p>Sort Array in Descending Order - rsort()</p>
+        <script>
+           str10 = ' <i>  BMW<br>Toyota<br>Volvo       </i> '
+           document.write(str10)
+        </script>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- ------ end text -------- -->
+      </div>
+    </div>
+  </article>
+  <article>
+    <h2>Codigo</h2>
+    <div>
+      <h3>HTML</h3>
+      <!-- ------ start text ------ -->
+      <pre id='gray'>&lt;body>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;h1>    Descending Order   &lt;/h1>
+      &lt;p>    Sort Array in Descending Order - rsort()      &lt;/p>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;/body></pre>
+      <!-- ------ end html -------- -->
+      <hr>
+      <!-- ------ begin -------- -->
+      <h3>PHP</h3>
+      <!-- ------ start js -------- -->
+      <pre id='gray'>&lt;?php
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      $cars = array("Volvo", "BMW", "Toyota");
+      rsort($cars);
+      $clength = count($cars);
+      <!--  -->
+      for($x = 0; $x &lt; $clength; $x++) {
+      <!--  -->
+      echo $cars[$x];
+      echo "&lt;br>";
+      }
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      ?></pre>
+    </div>
+  </article>
+</div>
+<hr>
+<hr>
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- -----------------------  end  ------------------------- -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- ----------------------  start  ------------------------ -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<div id='cont'>
+  <div id='head'>
+    <!-- -------------------------------- -->
+    <h1>array in ascending numerical</h1>
+    <!-- -------------------------------- -->
+  </div>
+</div>
+<div id='rot'>
+  <article>
+    <h2>Resultado</h2>
+    <div>
+      <h3>PHP - Answer</h3>
+      <!-- ------ start text ------ -->
+      <div id='very'>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <h1></h1>
+        <p>The following example sorts the elements of the $numbers array in ascending numerical order:</p>
+        <script>
+           str11 = ' <i>  2 <br> 4 <br> 6 <br> 11 <br> 22   </i> '
+           document.write(str11)
+        </script>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- ------ end text -------- -->
+      </div>
+    </div>
+  </article>
+  <article>
+    <h2>Codigo</h2>
+    <div>
+      <h3>HTML</h3>
+      <!-- ------ start text ------ -->
+      <pre id='gray'>&lt;body>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;h1>    array in ascending    &lt;/h1>
+      &lt;p>    The following example sorts the elements of the $numbers array in ascending numerical order      &lt;/p>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;/body></pre>
+      <!-- ------ end html -------- -->
+      <hr>
+      <!-- ------ begin -------- -->
+      <h3>PHP</h3>
+      <!-- ------ start js -------- -->
+      <pre id='gray'>&lt;?php
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      $numbers = array(4, 6, 2, 22, 11);
+      sort($numbers);
+      $arrlength = count($numbers);
+      <!--  -->
+      for($x = 0; $x &lt; $arrlength; $x++) {
+      <!--  -->
+      echo $numbers[$x];
+      echo "&lt;br>";
+      }
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      ?></pre>
+    </div>
+  </article>
+</div>
+<hr>
+<hr>
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- -----------------------  end  ------------------------- -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- ----------------------  start  ------------------------ -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<div id='cont'>
+  <div id='head'>
+    <!-- -------------------------------- -->
+    <h1>Descending String Order</h1>
+    <!-- -------------------------------- -->
+  </div>
+</div>
+<div id='rot'>
+  <article>
+    <h2>Resultado</h2>
+    <div>
+      <h3>PHP - Answer</h3>
+      <!-- ------ start text ------ -->
+      <div id='very'>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <h1>rsort()</h1>
+        <p>Sort Array in Descending Order - rsort()</p>
+        <script>
+           str12 = ' <i>    Volvo <br> Toyota <br> BMW   </i> '
+           document.write(str12)
+        </script>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- ------ end text -------- -->
+      </div>
+    </div>
+  </article>
+  <article>
+    <h2>Codigo</h2>
+    <div>
+      <h3>HTML</h3>
+      <!-- ------ start text ------ -->
+      <pre id='gray'>&lt;body>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;h1>    Descending Order    &lt;/h1>
+      &lt;p>     Sort Array in Descending Order - rsort()    &lt;/p>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;/body></pre>
+      <!-- ------ end html -------- -->
+      <hr>
+      <!-- ------ begin -------- -->
+      <h3>PHP</h3>
+      <!-- ------ start js -------- -->
+      <pre id='gray'>&lt;?php
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      $cars = array("Volvo", "BMW", "Toyota");
+      rsort($cars);
+      $clength = count($cars);
+      <!--  -->
+      for($x = 0; $x &lt; $clength; $x++) {
+      <!--  -->
+      echo $cars[$x];
+      echo "&lt;br>";
+      }
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      ?></pre>
+    </div>
+  </article>
+</div>
+<hr>
+<hr>
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- -----------------------  end  ------------------------- -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- ----------------------  start  ------------------------ -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<div id='cont'>
+  <div id='head'>
+    <!-- -------------------------------- -->
+    <h1>descending numerical order</h1>
+    <!-- -------------------------------- -->
+  </div>
+</div>
+<div id='rot'>
+  <article>
+    <h2>Resultado</h2>
+    <div>
+      <h3>PHP - Answer</h3>
+      <!-- ------ start text ------ -->
+      <div id='very'>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <h1></h1>
+        <p>sorts the elements of the $numbers array in descending numerical order</p>
+        <script>
+           str13 = ' <i>   22 <br> 11 <br> 6  <br> 4  <br> 2    </i> '
+           document.write(str13)
+        </script>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- ------ end text -------- -->
+      </div>
+    </div>
+  </article>
+  <article>
+    <h2>Codigo</h2>
+    <div>
+      <h3>HTML</h3>
+      <!-- ------ start text ------ -->
+      <pre id='gray'>&lt;body>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;h1>        &lt;/h1>
+      &lt;p>    sorts the elements of the $numbers array in descending numerical order      &lt;/p>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;/body></pre>
+      <!-- ------ end html -------- -->
+      <hr>
+      <!-- ------ begin -------- -->
+      <h3>PHP</h3>
+      <!-- ------ start js -------- -->
+      <pre id='gray'>&lt;?php
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      $numbers = array(4, 6, 2, 22, 11);
+      rsort($numbers);
+      $arrlength = count($numbers);
+      <!--  -->
+      for($x = 0; $x &lt; $arrlength; $x++) {
+      <!--  -->
+      echo $numbers[$x];
+      echo "&lt;br>";
+      }
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      ?></pre>
+    </div>
+  </article>
+</div>
+<hr>
+<hr>
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- -----------------------  end  ------------------------- -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- ----------------------  start  ------------------------ -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<div id='cont'>
+  <div id='head'>
+    <!-- -------------------------------- -->
+    <h1>Ascending Order Value</h1>
+    <!-- -------------------------------- -->
+  </div>
+</div>
+<div id='rot'>
+  <article>
+    <h2>Resultado</h2>
+    <div>
+      <h3>PHP - Answer</h3>
+      <!-- ------ start text ------ -->
+      <div id='very'>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <h1></h1>
+        <p>Sort Array (Ascending Order), According to Value - asort()</p>
+        <script>
+           str14 = ' <i>    Key=Peter, Value=35 <br> Key=Ben, Value=37 <br> Key=Joe, Value=43   </i> '
+           document.write(str14)
+        </script>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- ------ end text -------- -->
+      </div>
+    </div>
+  </article>
+  <article>
+    <h2>Codigo</h2>
+    <div>
+      <h3>HTML</h3>
+      <!-- ------ start text ------ -->
+      <pre id='gray'>&lt;body>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;h1>    Ascending Order    &lt;/h1>
+      &lt;p>   Sort Array (Ascending Order), According to Value - asort()      &lt;/p>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;/body></pre>
+      <!-- ------ end html -------- -->
+      <hr>
+      <!-- ------ begin -------- -->
+      <h3>PHP</h3>
+      <!-- ------ start js -------- -->
+      <pre id='gray'>&lt;?php
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+      asort($age);
+      <!--  -->
+      foreach($age as $x => $x_value) {
+      <!--  -->
+      echo "Key=" . $x . ", Value=" . $x_value;
+      echo "&lt;br>";
+      }
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      ?></pre>
+    </div>
+  </article>
+</div>
+<hr>
+<hr>
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- -----------------------  end  ------------------------- -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- ----------------------  start  ------------------------ -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<div id='cont'>
+  <div id='head'>
+    <!-- -------------------------------- -->
+    <h1>Ascending Order Key</h1>
+    <!-- -------------------------------- -->
+  </div>
+</div>
+<div id='rot'>
+  <article>
+    <h2>Resultado</h2>
+    <div>
+      <h3>PHP - Answer</h3>
+      <!-- ------ start text ------ -->
+      <div id='very'>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <h1>Ascending Order</h1>
+        <p>Sort Array (Ascending Order), According to Key - ksort()</p>
+        <script>
+           str15 = ' <i>   Key=Ben, Value=37 <br> Key=Joe, Value=43 <br> Key=Peter, Value=35    </i> '
+           document.write(str15)
+        </script>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- ------ end text -------- -->
+      </div>
+    </div>
+  </article>
+  <article>
+    <h2>Codigo</h2>
+    <div>
+      <h3>HTML</h3>
+      <!-- ------ start text ------ -->
+      <pre id='gray'>&lt;body>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;h1>    Ascending Order    &lt;/h1>
+      &lt;p>     Sort Array (Ascending Order), According to Key - ksort()    &lt;/p>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;/body></pre>
+      <!-- ------ end html -------- -->
+      <hr>
+      <!-- ------ begin -------- -->
+      <h3>PHP</h3>
+      <!-- ------ start js -------- -->
+      <pre id='gray'>&lt;?php
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+      ksort($age);
+      <!--  -->
+      foreach($age as $x => $x_value) {
+      <!--  -->
+      echo "Key=" . $x . ", Value=" . $x_value;
+      echo "&lt;br>";
+      }
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      ?></pre>
+    </div>
+  </article>
+</div>
+<hr>
+<hr>
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- -----------------------  end  ------------------------- -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- ----------------------  start  ------------------------ -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<div id='cont'>
+  <div id='head'>
+    <!-- -------------------------------- -->
+    <h1>Descending Order Value</h1>
+    <!-- -------------------------------- -->
+  </div>
+</div>
+<div id='rot'>
+  <article>
+    <h2>Resultado</h2>
+    <div>
+      <h3>PHP - Answer</h3>
+      <!-- ------ start text ------ -->
+      <div id='very'>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <h1>Descending Order</h1>
+        <p>Sort Array (Descending Order), According to Value - arsort()</p>
+        <script>
+           str16 = ' <i>  Key=Joe, Value=43 <br> Key=Ben, Value=37  <br> Key=Peter, Value=35     </i> '
+           document.write(str16)
+        </script>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- ------ end text -------- -->
+      </div>
+    </div>
+  </article>
+  <article>
+    <h2>Codigo</h2>
+    <div>
+      <h3>HTML</h3>
+      <!-- ------ start text ------ -->
+      <pre id='gray'>&lt;body>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;h1>    Descending Order    &lt;/h1>
+      &lt;p>    Sort Array (Descending Order), According to Value - arsort()     &lt;/p>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;/body></pre>
+      <!-- ------ end html -------- -->
+      <hr>
+      <!-- ------ begin -------- -->
+      <h3>PHP</h3>
+      <!-- ------ start js -------- -->
+      <pre id='gray'>&lt;?php
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+      arsort($age);
+      <!--  -->
+      foreach($age as $x => $x_value) {
+      <!--  -->
+      echo "Key=" . $x . ", Value=" . $x_value;
+      echo "&lt;br>";
+      }
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      ?></pre>
+    </div>
+  </article>
+</div>
+<hr>
+<hr>
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- -----------------------  end  ------------------------- -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- ----------------------  start  ------------------------ -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<div id='cont'>
+  <div id='head'>
+    <!-- -------------------------------- -->
+    <h1>Descending Order Key</h1>
+    <!-- -------------------------------- -->
+  </div>
+</div>
+<div id='rot'>
+  <article>
+    <h2>Resultado</h2>
+    <div>
+      <h3>PHP - Answer</h3>
+      <!-- ------ start text ------ -->
+      <div id='very'>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <h1></h1>
+        <p>Sort Array (Descending Order), According to Key - krsort()</p>
+        <script>
+           str17 = ' <i>   Key=Peter, Value=35 <br> Key=Joe, Value=43 <br> Key=Ben, Value=37    </i> '
+           document.write(str17)
+        </script>
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- ------ end text -------- -->
+      </div>
+    </div>
+  </article>
+  <article>
+    <h2>Codigo</h2>
+    <div>
+      <h3>HTML</h3>
+      <!-- ------ start text ------ -->
+      <pre id='gray'>&lt;body>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;h1>   Descending Order     &lt;/h1>
+      &lt;p>   Sort Array (Descending Order), According to Key - krsort()      &lt;/p>
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      &lt;/body></pre>
+      <!-- ------ end html -------- -->
+      <hr>
+      <!-- ------ begin -------- -->
+      <h3>PHP</h3>
+      <!-- ------ start js -------- -->
+      <pre id='gray'>&lt;?php
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+      krsort($age);
+      <!--  -->
+      foreach($age as $x => $x_value) {
+      <!--  -->
+      echo "Key=" . $x . ", Value=" . $x_value;
+      echo "&lt;br>";
+      }
+      <!-- :::::::::::::::::::::::::::::::::::::::::::::: -->
+      ?></pre>
+    </div>
+  </article>
+</div>
+<hr>
+<hr>
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- -----------------------  end  ------------------------- -->
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
