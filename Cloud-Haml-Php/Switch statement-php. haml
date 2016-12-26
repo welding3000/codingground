@@ -1,0 +1,69 @@
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1 The PHP switch Statement
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::         
+        %h1  The PHP switch Statement
+        %p
+     
+        :javascript
+           str = ' <i>  </i> '
+            document.write(str) 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1>  &lt;/h1>
+        &lt;p>   &lt;/p>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+        $favcolor = "red";
+        /
+        switch ($favcolor) {
+        case "red":
+        echo "Your favorite color is red!";
+        break;
+        case "blue":
+        echo "Your favorite color is blue!";
+        break;
+        case "green":
+        echo "Your favorite color is green!";
+        break;
+        default:
+        echo "Your favorite color is neither red, blue, nor green!";
+        }       
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
