@@ -1,0 +1,181 @@
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1 The PHP while Loop
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::         
+        %h1  
+        %p The while loop executes a block of code as long as the specified condition is true
+     
+        :javascript
+           str = ' <i> The number is: 1 <br>The number is: 2 <br> The number is: 3 <br> The number is: 4 <br> The number is: 5  </i> '
+            document.write(str) 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1>  &lt;/h1>
+        &lt;p>  The while loop executes a block of code as long as the specified condition is true &lt;/p>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+        $x = 1;
+        /
+        while($x &lt;= 5) {
+        echo "The number is: $x &lt;br>";
+        $x++;
+        } 
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1 The PHP do
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::         
+        %h1  The PHP do...while Loop
+        %p The do...while loop will always execute the block of code once, it will then check the condition, and repeat the loop while the specified condition is true
+     
+        :javascript
+           str1 = ' <i> The number is: 1 <br>The number is: 2 <br> The number is: 3 <br> The number is: 4 <br> The number is: 5  </i> ';
+            document.write(str1) 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1> The PHP do...while Loop &lt;/h1>
+        &lt;p> The do...while loop will always execute the block of code once, it will then check the condition, and repeat the loop while the specified condition is true &lt;/p>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+        $x = 1;
+        /
+        do {
+        echo "The number is: $x &lt;br>";
+        $x++;
+        } while ($x &lt;= 5);
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1 do while loop 
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::         
+        %h1  
+        %p
+     
+        :javascript
+           str2 = ' <i> The number is: 6  </i> '
+            document.write(str2) 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1>  &lt;/h1>
+        &lt;p>  Notice that in a do while loop the condition is tested AFTER executing the statements within the loop &lt;/p>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+        $x = 6;
+        /
+        do {
+        echo "The number is: $x &lt;br>";
+        $x++;
+        } while ($x &lt;= 5); 
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
