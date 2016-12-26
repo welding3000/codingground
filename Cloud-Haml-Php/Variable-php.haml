@@ -1,0 +1,445 @@
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1 Creating (Declaring) PHP Variables
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        %h1 Creating (Declaring) PHP Variables
+        %p  
+
+        :javascript
+           str = ' <i>   Hello world!<br>5 <br>10.5   </i> '
+            document.write(str) 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1> Creating (Declaring) PHP Variables &lt;/h1>
+        &lt;p>   &lt;/p>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+        $txt = "Hello world!";
+        $x = 5;
+        $y = 10.5;
+
+        echo $txt;
+        echo "&lt;br>";
+        echo $x;
+        echo "&lt;br>";
+        echo $y;
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1 Output Variables
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        %h1 Output Variables
+        %p  The PHP echo statement is often used to output data to the screen 
+
+        :javascript
+           str1 = ' <i>  I love W3Schools.com! <br> I love W3Schools.com!    </i> '
+            document.write(str1) 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1> Output Variables &lt;/h1>
+        &lt;p>  The PHP echo statement is often used to output data to the screen  &lt;/p>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+        $txt = "W3Schools.com";
+        $b = '&lt;br>';
+        /
+        echo "I love $txt!" .$b ;
+        echo "I love " . $txt . "!";
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1 Global and Local Scope
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        %h1 
+        %p 
+
+        :javascript
+           str2 = ' <i>    Variable x inside function is: 5<br>Variable x outside function is: 5  </i> '
+            document.write(str2) 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1>  &lt;/h1>
+        &lt;p>   &lt;/p>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+        $x = 5; // global scope
+        /  
+        function myTest() {
+        // using x inside this function will generate an error
+        echo "&lt;p>Variable x inside function is: $x &lt;/p>";
+        } 
+        myTest();
+        /
+        echo "&lt;p>Variable x outside function is: $x&lt;/p>";
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+
+
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1 A variable declared within a function has a LOCAL SCOPE 
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        %h1 
+        %p  
+
+        :javascript
+           str3 = ' <i>    Variable x inside function is: 5<br>Variable x outside function is: 5    </i> '
+            document.write(str3) 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1>  &lt;/h1>
+        &lt;p>   &lt;/p>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+        function myTest() {
+        $x = 5; // local scope
+        echo "&lt;p>Variable x inside function is: $x&lt;/p>";
+        } 
+        myTest();
+        // using x outside the function will generate an error
+        echo "&lt;p>Variable x outside function is: $x&lt;/p>";
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1 PHP The global Keyword
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        %h1 PHP The global Keyword
+        %p  The global keyword is used to access a global variable from within a function
+
+        :javascript
+           str4 = ' <i>   15   </i> '
+            document.write(str4) 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1> PHP The global Keyword &lt;/h1>
+        &lt;p>  The global keyword is used to access a global variable from within a function &lt;/p>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+        $x = 5;
+        $y = 10;
+        /
+        function myTest() {
+        global $x, $y;
+        $y = $x + $y;
+        } 
+        /
+        myTest();  // run function
+        echo $y; // output the new value for variable $y
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1  global variables in an array
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        %h1  global variables in an array
+        %p   PHP also stores all global variables in an array called $GLOBALS[ index ].
+
+        :javascript
+           str5 = ' <i>  15    </i> '
+            document.write(str5) 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1>   global variables in an array &lt;/h1>
+        &lt;p>   PHP also stores all global variables in an array called $GLOBALS[ index ]. &lt;/p>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+        $x = 5;
+        $y = 10;
+        /
+        function myTest() {
+        $GLOBALS['y'] = $GLOBALS['x'] + $GLOBALS['y'];
+        } 
+        /
+        myTest();
+        echo $y;
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1 
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        %h1 PHP The static Keyword
+        %p  Normally, when a function is completed/executed, all of its variables are deleted
+        %p However, sometimes we want a local variable NOT to be deleted
+
+        :javascript
+           str6 = ' <i>   0 <br> 1 <br> 2   </i> '
+            document.write(str6) 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1>  &lt;/h1>
+        &lt;p>   &lt;/p>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+        function myTest() {
+        static $x = 0;
+        echo $x;
+        $x++;
+        }
+        /
+        myTest();
+        echo "&lt;br>";
+        myTest();
+        echo "&lt;br>";
+        myTest();
+
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
