@@ -1,0 +1,535 @@
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1  PHP Arithmetic Operators
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        %h1 Arithmetic Operators
+        %p  It consists of the study of numbers , especially the properties of the traditional operations between them— addition , subtraction , multiplication and division .
+
+        :javascript
+           str = ' <i>   <pre>+	Addition	    10 + 6	  =  16 <br>-	Subtraction	    10 - 6	  =  4 <br>*	Multiplication      10 * 6	  =  60 <br>/	Division	    10 / 6	  =  1.6666666666667 <br>%	Modulus 	    10 % 6	  =  4<br>    </pre> </i> '
+            document.write(str) 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1>  Arithmetic Operators  &lt;/h1>
+        &lt;p> It consists of the study of numbers , especially the properties of the traditional operations between them— addition , subtraction , multiplication and division .   &lt;/p>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+        $x = 10;  
+        $y = 6;
+
+        echo $x + $y .'&lt;br>'; // Addition
+        echo $x - $y .'&lt;br>'; // Subtraction
+        echo $x * $y .'&lt;br>'; // Multiplication 
+        echo $x / $y .'&lt;br>'; // Division
+        echo $x % $y .'&lt;br>'; // Modulus 
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1  PHP Assignment Operators
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        %h1 
+        %p  
+
+        :javascript
+           str1 = ' <i>   10<br>20<br>= Equal 10<br>+= Addiction 30<br>-= Subtraction 10<br>*= Multiplication 200<br>/= Division 2<br>%= Module 1     </i> '
+            document.write(str1) 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1>   &lt;/h1>
+        &lt;p>    &lt;/p>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+        $b= '&lt;br>';
+
+        echo '10' .$b .'20'.$b ;
+
+        // = equal 
+        $i= 10 ;
+        echo '= Equal '. $i .$b;
+
+        //+= Addition
+        $a = 20;
+        $a += 10;
+        echo ' += Addiction  ' .$a . $b;
+
+        //-= Subtraction
+        $s =20 ;
+        $s -=10 ;
+        echo '-= Subtraction ' .$s .$b;
+
+        //*= Multiplication
+        $m =20 ;
+        $m *=10 ;
+        echo '*= Multiplication '.$m . $b;
+
+        ///= Division
+        $d =20 ;
+        $d /=10 ;
+        echo ' /= Division ' .$d .$b;
+
+        //%= Module
+        $l =21;
+        $l %=2 ;
+        echo ' %= Module ' 	 .$l .$b;
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1  PHP Comparison Operators
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        %h1 
+        %p  
+
+        :javascript
+           str2 = ' <i> $x = 100 <br> $y = "100" <br><br> $x == $y Equal <br>bool(true)   <br>$x === $y Identical <br>bool(false)   <br>$x != $y Not equal <br>bool(false)  <br>$x <> $y Not equal <br>bool(false)  <br>$x !== $y Not identical <br>bool(true)  <br>$x > $y Greater than <br> bool(false)  <br>$x < $y Less than<br> bool(false) <br>$x >= $y Greater than or equal to <br>bool(true) <br>$x <= $y Less than or equal to  <br>bool(true)<br> 	      </i> '
+            document.write(str2) 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1>   &lt;/h1>
+        &lt;p>    &lt;/p>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+        $x = 100;
+        $y = "100";
+        $b = ' &lt;br>';
+        /
+        print  $b.' $x  == $y 	Equal  '.$b;  
+        var_dump($x == $y  ) ; // returns true because values are equal
+        /
+        print $b.' $x  === $y Identical ' .$b;  
+        var_dump($x === $y); // returns false because types are not equal
+        /
+        print $b. ' $x  !=  $y Not equal ' .$b;
+        var_dump($x != $y); // returns false because values are equal
+        /
+        print $b. ' $x  &lt;> $y Not equal ' .$b;
+        var_dump($x &lt;> $y); // returns false because values are equal
+        /
+        print $b. ' $x  !== $y Not identical' .$b;
+        var_dump($x !== $y); // returns true because types are not equal
+        /
+        print $b. ' $x  > $y  Greater than ' .$b;
+        var_dump($x > $y); // returns true because $x is greater than $y
+        /
+        print $b. ' $x  &lt; $y Less than ' .$b;
+        var_dump($x &lt; $y); // returns true because $x is less than $y
+        /
+        print $b. ' $x  >= $y Greater than or equal to ' .$b;
+        var_dump($x >= $y); // returns true because $x is greater than or equal to $y
+        /
+        print $b. ' $x  &lt;= $y  Less than or equal to ' .$b;
+        var_dump($x &lt;= $y); // returns true because $x is less than or equal to $y
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1  PHP Increment / Decrement Operators
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        %h1 
+        %p  
+
+        :javascript
+           str3 = ' <i>  ++$x	Pre-increment	Increments $x by one, then returns $x <br>11 <br>$x++ Post-increment	Returns $x, then increments $x by one <br> 10 <br>--$x	Pre-decrement	Decrements $x by one, then returns $x <br>9 <br>$x-- Post-decrement	Returns $x, then decrements $x by one <br> 10       </i> '
+            document.write(str3) 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1>   &lt;/h1>
+        &lt;p>    &lt;/p>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+        $b = ' &lt;br>';
+        $x = 10;  
+        $y = 10;
+        $w = 10;
+        $z = 10;
+        /
+        echo  ' ++$x	Pre-increment	Increments $x by one, then returns $x  ' .$b;
+        echo ++$x .$b;
+        /
+        echo  ' $x++ Post-increment	Returns $x, then increments $x by one ' .$b;
+        echo $y++ .$b;
+        /
+        echo  ' --$x	Pre-decrement	Decrements $x by one, then returns $x ' .$b;
+        echo --$w .$b;
+        /
+        echo  ' $x--    Post-decrement	Returns $x, then decrements $x by one ' .$b;
+        echo $z-- .$b;
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1  PHP Logical Operators
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        %h1 
+        %p  
+
+        :javascript
+           str4 = ' <i>    and	And	$x and $y	True if both $x and $y are true<br>100 == 100 and 50 == 50<br>or	Or	$x or $y	True if either $x or $y is true<br>100 == 100 or 50 == 80<br>xor	Xor	$x xor $y	True if either $x or $y is true, but not both<br>100 == 100 xor 50 == 80<br>&&	And	$x && $y	True if both $x and $y are truex<br>100 == 100 && 50 == 50<br>||	Or	$x || $y	True if either $x or $y is truex<br>100 == 100 || 50 == 80<br>!	Not	!$x	True if $x is not truex<br>100 !== 90    </i> '
+            document.write(str4) 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1>   &lt;/h1>
+        &lt;p>    &lt;/p>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+        $x = 100;  
+        $y = 50;
+        $b = '&lt;br>';
+        /
+        echo 'and	And	$x and $y	True if both $x and $y are true' .$b ;
+        if ($x == 100 and $y == 50) {
+        echo "$x == 100 and $y == 50";
+        }
+        /
+        echo $b. 'or	Or	$x or $y	True if either $x or $y is true' .$b ;
+        if ($x == 100 or $y == 80) {
+        echo "$x == 100 or $y == 80";
+        }
+        /
+        echo $b. 'xor	Xor	$x xor $y	True if either $x or $y is true, but not both' .$b ;
+        if ($x == 100 xor $y == 80) {
+        echo "$x == 100 xor $y == 80";
+        }
+        /
+        echo $b. '&&	And	$x && $y	True if both $x and $y are truex' .$b ;
+        if ($x == 100 && $y == 50) {
+        echo "$x == 100 && $y == 50";
+        }
+        /
+        echo $b. '||	Or	$x || $y	True if either $x or $y is truex' .$b ;
+        if ($x == 100 || $y == 80) {
+        echo "$x == 100 || $y == 80";
+        }
+        /
+        echo $b. '!	Not	!$x	True if $x is not truex' .$b ;
+        if ($x !== 90) {
+        echo "$x !== 90";
+        }
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1  Concatenation
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        %h1 
+        %p  
+
+        :javascript
+           str4 = ' <i>  . Concatenation $txt1 . $txt2 Concatenation of $txt1 and $txt2 <br>Hello world!<br> .= Concatenation assignment $txt1 .= $txt2 Appends $txt2 to $txt1 <br> Hello world!      </i> '
+            document.write(str4) 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1>   &lt;/h1>
+        &lt;p>    &lt;/p>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+        $txt1 = "Hello";
+        $txt2 = " world!";
+        $b = ' &lt;br>';
+        /
+        echo '. Concatenation $txt1 . $txt2 Concatenation of $txt1 and $txt2 ' .$b	;
+        echo $txt1 . $txt2;
+        /
+        echo  $b .'.= Concatenation assignment $txt1 .= $txt2 Appends $txt2 to $txt1' .$b ;
+        $txt1 .= $txt2;
+        /
+        echo $txt1;
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ ----------------------  start  ------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#cont
+  #head
+    / --------------------------------
+    %h1  PHP Array Operators 
+    / --------------------------------
+#rot
+  %article
+    %h2 Resultado
+    %div
+      %h3 PHP - Answer
+      / ------ start text ------
+      #very
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        %h1 
+        %p  
+
+        :javascript
+           str5 = ' <i>    +	Union $x + $y	Union of $x and $y <br>Array ( [a] => red [b] => green [c] => blue [d] => yellow ) <br>==	Equality $x == $y	Returns true if $x and $y have the same key/value pairs <br>bool(false) <br> ===	Identity $x === $y	Returns true if $x and $y have the same key/value pairs in the same order and of the same types <br> bool(false) <br>!=	Inequality $x != $y	Returns true if $x is not equal to $y <br> bool(true) <br> <>	Inequality $x <> $y	Returns true if $x is not equal to $y <br> bool(true) <br> !==	Non-identity $x !== $y	Returns true if $x is not identical to $y <br> bool(true)    </i> '
+            document.write(str5); 
+           
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        / ------ end text --------
+  %article
+    %h2 Codigo
+    %div
+      %h3 HTML
+      / ------ start text ------
+      %pre#gray
+        &lt;body>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;h1>   &lt;/h1>
+        &lt;p>    &lt;/p>
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        &lt;/body>
+      / ------ end html --------
+      %hr
+      / ------ begin --------
+      %h3 PHP
+      / ------ start js --------
+      %pre#gray
+        &lt;?php
+        / ::::::::::::::::::::::::::::::::::::::::::::::    
+        $x = array("a" => "red", "b" => "green");  
+        $y = array("c" => "blue", "d" => "yellow");  
+        $b = '&lt;br>';
+        /
+        echo $b.'+	Union  $x + $y	Union of $x and $y '.$b;
+        print_r($x + $y ) ; // union of $x and $y
+        /
+        echo $b.'==	Equality  $x == $y	Returns true if $x and $y have the same key/value pairs '.$b;
+        var_dump($x == $y );
+        /
+        echo $b.'===	Identity $x === $y	Returns true if $x and $y have the same key/value pairs in the same order and of the same types '.$b;
+        var_dump($x === $y);
+        /
+        echo $b.'!=	Inequality   $x != $y	Returns true if $x is not equal to $y  '.$b;
+        var_dump($x != $y);
+        /
+        echo $b.'&lt;>	Inequality   $x &lt;> $y	Returns true if $x is not equal to $y  '.$b;
+        var_dump($x &lt;> $y);
+        /
+        echo $b.'!==	Non-identity $x !== $y	Returns true if $x is not identical to $y  '.$b;
+        var_dump($x !== $y);
+        / ::::::::::::::::::::::::::::::::::::::::::::::
+        ?>
+%hr
+%hr
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/ -----------------------  end  -------------------------
+/ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
