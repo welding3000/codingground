@@ -1,48 +1,61 @@
-
-
-/* ::::::::::-----------------------------------------::::::::::::::: */
-
+// --------------------------------------------
 $green: #a1c057; // important  
-$white: white; // important
-$black: black; // important
-$Hblack: #333; // important
-$line: inline; // important
-$none: none; // important
-$over: auto; // important
-$dark: 1px solid #333; // important 
-$aqua: 1px solid aqua; // important
-$tp: 15px; // important
-$pd: 15px 15px; // important
-$twen: 20px; // important
-$darkblue: rgba(33, 34, 66, 0.77);   // important         
-
-/* ::::::::::::::::::::::::: */
-// background 
-@mixin bg-black()  { background: $black;   }
-@mixin bg-Hblack() { background: $Hblack;  } 
-@mixin bg-green()  { background: $green;  } 
-@mixin bg-darkblue()  { background: $darkblue;  } 
-// color
-@mixin cl-white() {  color:  $white;     } 
-// border
-@mixin br-aqua()  {  border: $aqua;      } 
-@mixin br-dark()  {  border: $dark;      } 
-// overflow
-@mixin overflow() {  overflow: $over;    } 
-@mixin over-x()   {  overflow-x: $over;  }
-// padding
-@mixin pd()       {  padding: $pd;      } 
-@mixin pd-twen()  {  padding: $twen;    } 
-// margin
-@mixin mar-tp()   {  margin-top: $tp;   } 
-@mixin mar-over()   {  margin: $over;   } 
-// display
-@mixin ds-ln()    {   display: $line;   } 
-@mixin ds-no()    {  display: $none;    } 
-// text-decoration
-@mixin tx-dec()   {  text-decoration: $none;  } 
-// list style
-@mixin lt-st()    {  list-style: $none;  } 
+$white: white;   // important
+$black: black;   // important
+$Hblack: #333;   // important
+$line:  inline;  // important
+$none:  none;    // important
+$over:  auto;    // important
+$dark:  1px solid #333; // important 
+$aqua:  1px solid aqua; // important
+$tp:    15px;      // important
+$pd:    15px 15px; // important
+$twen:  20px;      // important
+$darkblue: rgba(33, 34, 66, 0.77); // important  
+// --------------------------------------------
+$rel:  relative; // important
+$abs:  absolute; // important
+$flex: flex ;    // important
+$ct:   center;   // important
+$per:  900px;    // important
+$jt:   justify;  // important
+$rpt:  no-repeat ;    // important
+$ard:  space-around;  // important
+$bet:  space-between; // important
+$rob:  'Roboto', sans-sefif; // important
+$shadow: 0px 20px 100px #555; // important
+$back:   linear-gradient(to bottom, #59476f 30%, #7b88d1 100%); // important
+$ground: linear-gradient(to top, #eba65b 30%, #d99267 100%);    // important
+                                                            
+/* ::::::::::::----------------------------::::::::::::: */
+@mixin bg-black() { background: $black;   }      // background 
+@mixin bg-Hblack(){ background: $Hblack;  }      // background 
+@mixin bg-green() { background: $green;   }      // background 
+@mixin bg-darkblue(){ background: $darkblue; }   // background 
+@mixin bg-rpt()   { background-repeat: $rpt; }   // background 
+@mixin cl-white() {  color:  $white;      }      // color
+@mixin br-aqua()  {  border: $aqua;       }      // border
+@mixin br-dark()  {  border: $dark;       }      // border
+@mixin overflow() {  overflow: $over;     }      // overflow
+@mixin over-x()   {  overflow-x: $over;   }      // overflow
+@mixin pd()       {  padding: $pd;        }      // padding
+@mixin pd-twen()  {  padding: $twen;      }      // padding
+@mixin mar-tp()   {  margin-top: $tp;     }      // margin
+@mixin mar-over() {  margin: $over;       }      // margin
+@mixin ds-ln()    {  display: $line;      }      // display 
+@mixin ds-no()    {  display: $none;      }      // display 
+@mixin ds-fx()    {  display: $flex;      }      // display
+@mixin tx-dec()   {  text-decoration: $none; }   // text-decoration
+@mixin tx-al()    {  text-align: $ct;     }      // list style
+@mixin lt-st()    {  list-style: $none;   }      // list style
+@mixin pt-abs()   {  position:$abs;       }      // position
+@mixin pt-rel()   {  position:$rel;       }      // position   
+@mixin font()     {  font-family: $rob ;     }   // font
+@mixin js-bet()   {  justify-content: $bet;  }   // justify
+@mixin js-ard()   {  justify-content: $ard;  }   // justify
+@mixin al-sf()    {  align-self: $ct ;    }      // align 
+@mixin per()      {  perspective: $per;   }      // pers
+/* ::::::::::::----------------------------::::::::::::: */
 
 //  margin: $over; 
 @mixin body() {    @include mar-over() ;}
@@ -94,7 +107,6 @@ $darkblue: rgba(33, 34, 66, 0.77);   // important
 
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-
 .happy {
   color: black;
   text-align: justify;
@@ -120,7 +132,6 @@ $darkblue: rgba(33, 34, 66, 0.77);   // important
   
 // background: $black; color: $white;  border: $aqua;   
   @include acordionBox()
-
 }
 
 .textAcordion {
@@ -129,11 +140,9 @@ $darkblue: rgba(33, 34, 66, 0.77);   // important
  
 // overflow: $over;   border: $aqua;  background: $Hblack;  
   @include textAcordion()
-
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::: */
-
 .caja {
   background: #1d1f20;
   margin-top: 5px;
@@ -148,7 +157,6 @@ $darkblue: rgba(33, 34, 66, 0.77);   // important
 
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-
 /* Esto imprime navegador */
 #nav_print_model_ul {
   margin-top: 3px;
@@ -160,7 +168,6 @@ $darkblue: rgba(33, 34, 66, 0.77);   // important
 
 
 /* ::::::::::::::::::::::::: */
-
 #nav_print_container_li {
 
 //  display: $line;   
@@ -169,7 +176,6 @@ $darkblue: rgba(33, 34, 66, 0.77);   // important
 
 
 /* ::::::::::::::::::::::::: */
-
 #container_model_a {
   padding: 12px 75px;
   line-height: 34px;
@@ -183,24 +189,17 @@ $darkblue: rgba(33, 34, 66, 0.77);   // important
 
 
 /* ::::::::::::::::::::::::: */
-
-
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-
-
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-
 .boxout {
   background: rgba(110, 110, 110, 0.5);
   
 //  margin-top: $tp; padding: $pd; overflow-x: $over;  color: $white;
   @include boxout()
-
 }
 
 
 /* ::::::::::::::::::::::::: */
-
 .box {
   background: rgba(255, 255, 255, 0.2);
   
@@ -210,19 +209,10 @@ $darkblue: rgba(33, 34, 66, 0.77);   // important
 
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-
-
 /* :::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-
 /* ####  Cloud-Print-Output [  Hide   ]  */
-
-
 /* :::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-
 /* ####  Cloud-Print-Output [  Hide --- Container ---ul  ]  */
-
 #hide_show_border_container,
 #hide_show_border_container1,
 #hide_show_border_container2,
@@ -239,15 +229,11 @@ $darkblue: rgba(33, 34, 66, 0.77);   // important
 //  border: $aqua;   
   @include ul();
   @include hide-ul();
-
 }
 
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-
 /* ####  Cloud-Print-Output [  Hide --- Inline --- li  ]*/
-
 #print_hide_button_inline {
   
 //  display: $line;   
@@ -256,10 +242,7 @@ $darkblue: rgba(33, 34, 66, 0.77);   // important
 
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-
 /* ####  Cloud-Print-Output [  Hide --- A  ]*/
-
 #hide_print_button_code,
 #hide_print_button_code1,
 #hide_print_button_code2,
@@ -286,10 +269,7 @@ $darkblue: rgba(33, 34, 66, 0.77);   // important
 
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-
 /* ####  Cloud-Print-Output [  Hide --- Code --- Effect  ] */
-
 #hide_show_print_code,
 #hide_show_print_code1,
 #hide_show_print_code2,
@@ -315,10 +295,7 @@ $darkblue: rgba(33, 34, 66, 0.77);   // important
 
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-
-
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-
 #tabs-1,
 #tabs-2,
 #tabs-3,
@@ -341,10 +318,7 @@ $darkblue: rgba(33, 34, 66, 0.77);   // important
 
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-
-
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
 @mixin cloud() {
   background: rgb(10, 8, 9);
   background: linear-gradient(to bottom, rgba(10, 8, 9, 1) 0%, rgba(10, 14, 10, 1) 7%, rgba(10, 14, 10, 1) 7%, rgba(75, 81, 81, 1) 47%, rgba(10, 14, 10, 1) 91%, rgba(10, 8, 9, 1) 100%);
@@ -357,7 +331,6 @@ $darkblue: rgba(33, 34, 66, 0.77);   // important
 
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
 @mixin cloud-model() {
   background: #8b8b8b;
   background: linear-gradient(to bottom, #8b8b8b 0%, #6a6a6a 50%, #5e5e5e 51%, #717171 100%);
@@ -370,7 +343,6 @@ $darkblue: rgba(33, 34, 66, 0.77);   // important
 
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
 .acordion {
   @include cloud();
   cursor: pointer;
@@ -408,4 +380,3 @@ $darkblue: rgba(33, 34, 66, 0.77);   // important
   border-left: 1px solid #e2695f;
   border-radius: 3px;
 }
-
