@@ -1,0 +1,240 @@
+// --------------------------------------------
+$green: #a1c057; // important  
+$white: white;   // important
+$black: black;   // important
+$Hblack: #333;   // important
+$line:  inline;  // important
+$none:  none;    // important
+$over:  auto;    // important
+$dark:  1px solid #333; // important 
+$aqua:  1px solid aqua; // important
+$tp:    15px;      // important
+$pd:    15px 15px; // important
+$twen:  20px;      // important
+$darkblue: rgba(33, 34, 66, 0.77); // important  
+// --------------------------------------------
+$rel:  relative; // important
+$abs:  absolute; // important
+$flex: flex ;    // important
+$ct:   center;   // important
+$per:  900px;    // important
+$jt:   justify;  // important
+$rpt:  no-repeat ;    // important
+$ard:  space-around;  // important
+$bet:  space-between; // important
+$rob:  'Roboto', sans-sefif; // important
+$shadow: 0px 20px 100px #555; // important
+$back:   linear-gradient(to bottom, #59476f 30%, #7b88d1 100%); // important
+$ground: linear-gradient(to top, #eba65b 30%, #d99267 100%);    // important
+                                                            
+/* ::::::::::::----------------------------::::::::::::: */
+@mixin bg-black() { background: $black;   }      // background 
+@mixin bg-Hblack(){ background: $Hblack;  }      // background 
+@mixin bg-green() { background: $green;   }      // background 
+@mixin bg-darkblue(){ background: $darkblue; }   // background 
+@mixin bg-rpt()   { background-repeat: $rpt; }   // background 
+@mixin cl-white() {  color:  $white;      }      // color
+@mixin br-aqua()  {  border: $aqua;       }      // border
+@mixin br-dark()  {  border: $dark;       }      // border
+@mixin overflow() {  overflow: $over;     }      // overflow
+@mixin over-x()   {  overflow-x: $over;   }      // overflow
+@mixin pd()       {  padding: $pd;        }      // padding
+@mixin pd-twen()  {  padding: $twen;      }      // padding
+@mixin mar-tp()   {  margin-top: $tp;     }      // margin
+@mixin mar-over() {  margin: $over;       }      // margin
+@mixin ds-ln()    {  display: $line;      }      // display 
+@mixin ds-no()    {  display: $none;      }      // display 
+@mixin ds-fx()    {  display: $flex;      }      // display
+@mixin tx-dec()   {  text-decoration: $none; }   // text-decoration
+@mixin tx-al()    {  text-align: $ct;     }      // list style
+@mixin lt-st()    {  list-style: $none;   }      // list style
+@mixin pt-abs()   {  position:$abs;       }      // position
+@mixin pt-rel()   {  position:$rel;       }      // position   
+@mixin font()     {  font-family: $rob ;     }   // font
+@mixin js-bet()   {  justify-content: $bet;  }   // justify
+@mixin js-ard()   {  justify-content: $ard;  }   // justify
+@mixin al-sf()    {  align-self: $ct ;    }      // align 
+@mixin per()      {  perspective: $per;   }      // pers
+/* ::::::::::::----------------------------::::::::::::: */
+
+
+
+
+/*  Fondo y estilo de letras */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+body {
+  font-family: 'Raleway', sans-serif;
+  background: url('http://imagenesdepaisajesnaturales.net/wp-content/uploads/2016/08/fondos-de-pantalla-de-playas-transparente.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 20%;
+  // background: rgba(161,192,87,0.9 );
+}
+
+@mixin model($tp,$lft,$wd,$he) {
+  top: $tp;  left: $lft;  width: $wd;  height: $he;
+}
+
+@mixin wrapper() {
+  position: $abs; // important
+  //  10% , 40%  , 300px ,  500px 
+  @include model( 80px,
+  10px,
+  380px,
+  1200px); //  top , left , width ,  height 
+}
+
+.wrapper {
+  @include wrapper();
+  perspective: 900px;
+  background: rgba(161, 192, 87, 0.9);
+}
+
+// produce los effectos de animaccion 
+@mixin container($tp,$wd,$he) {
+  top: $tp;  width: $wd;  height: $he;  position: $abs;
+}
+
+.container {
+  transition: .5s all ease;
+  transform: rotateX(40deg) scale(0.4); // 
+  perspective: 900px;
+  box-shadow: 0px 20px 50px #555;
+  animation: entry 1s linear 1;
+  @include container( 20%,
+  100%,
+  10%); //   top , width ,  height 
+}
+
+// color y posision primer box
+//@mixin c0($tp ,  $wd , $he , $in  ,$rad ) {    top: $tp ;  width: $wd;  height: $he;  z-index: $in;   position: $post;   border-radius:$rad ; }
+#c0 {
+  background: rgba(19, 80, 109, 0.8);
+  // :::::::::::  top , width ,  height  , index ,radius
+  //  @include c0(   0%  , 300px ,  500px    , 300  , 21px  );
+  position: $abs;
+  width: 800px;
+  height: 270px;
+  left: -210px;
+  top: -60px;
+}
+
+// posision del 2 box
+@mixin c1( $wd,$he,$tp,$lt,$in,$rad) {
+  width: $wd;  height: $he;  top: $tp;  left: $lt;  z-index: $in;  border-radius: $rad;
+}
+
+#c1 {
+  // background: linear-gradient(to top right, #3f51b5 0%, #039be5 40%);
+  background: rgba(133, 21, 21, 0.8);
+  // 800px,270px, 23% , -180%, 10 , 21px  
+  @include c1( 800px,
+  270px,
+  55px,
+  -210px,
+  10,
+  0px); //  width| height| top| left| index |radius
+}
+
+// posision del 3 box  izquierda 
+@mixin c2( $wd,$he,$tp,$lt,$in,$rad) {
+  width: $wd;  height: $he;  top: $tp;  left: $lt;  z-index: $in;  border-radius: $rad;
+}
+
+#c2 {
+  background: rgba(33, 33, 33, 0.8);
+  //  800px , 270px , 46%, -180% ,   2   , 21px   
+  @include c2( 800px,
+  270px,
+  175px,
+  -210px,
+  1,
+  0px); //  width| height| top| left| index |radius
+}
+
+// posision del 4 box  
+@mixin c3($wd,$he,$tp,$lt,$in,$rad) {
+  width: $wd;  height: $he;  top: $tp;  left: $lt;  z-index: $in;  border-radius: $rad;
+}
+
+#c3 {
+  background: rgba(61, 51, 221, 0.8);
+  // 800px , 270px , 69% , -180%  , 0     , 21px 
+  @include c3( 800px,
+  270px,
+  295px,
+  -210px,
+  0,
+  0px); //  width| height| top| left| index |radius
+}
+
+
+/* Effecto con el mouse */
+
+.container:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(0.5) translateY(10px); // 1.5
+  transition: .5s all ease;
+  z-index: 400;
+}
+
+// Establecer imagen principal
+@mixin image($tp,$lft,$wd,$he) {
+  top: $tp;  left: $lft;  width: $wd;  height: $he;  position: $abs;}
+
+.image {
+  border-radius: 21px;
+  background-image: url('https://codigoespagueti.com/wp-content/uploads/2016/02/CrashBandicoot.jpg');
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  // imagen navegador
+  background-size: 300px 350px;
+  //  0% ,  0%  , 100% ,  100%    
+  @include image( 0%,  0%,  500px,  270px); // top , left , width ,  height 
+}
+
+// Este da el color de la parte de abajo de una imagen para seleccionar todos y las words
+@mixin story($tp,$lft,$wd,$he,$in) {
+  top: $tp;  left: $lft;  width: $wd;  height: $he;  z-index: $in;  position: $abs;
+}
+
+.story {
+  //  5% , -1%  ,  100%  , 55%   ,30 
+  @include story( 5px,  -1px,  800px,  85px,  30); // top , left , width ,  height , index   
+}
+
+h1,h2,h3,h4 {
+  text-align: center;
+  text-shadow: 0px 0px 10px #eee;
+  color: #eee;
+  letter-spacing: 2px;
+}
+
+h4 {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 14px;
+  color: black;
+  padding: 0px 20px 20px 20px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+#hego {
+  background: rgba(161, 192, 87, 0.9);
+  padding: 18px;
+  max-width: 800px;
+  margin: auto;
+  position:relative;
+  top:-15px;
+}
+
+
+
+
