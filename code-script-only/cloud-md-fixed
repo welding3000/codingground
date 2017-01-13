@@ -1,0 +1,72 @@
+// search 
+var srh={
+// model  
+acd:   '<div class="accordion indice font" id="return">search</div>',
+lm:    '<div class="panel limon">',  
+tb:    '<table style="width:100%">', 
+// begin -end  
+app:   '<td><p class="apple">',
+endapp:'</p></td> ',  
+// add-table  
+tr:    '</tr><tr>',
+// end-wor  
+endtb: '</table></div>', 
+// modific-word
+clp:   '<td colspan="2">',  
+}
+// model - search
+var nv=  srh.acd+srh.lm+srh.tb;
+// model - begin - end
+var pp=  srh.app;
+var ff=  srh.endapp ;
+// add - colapse md
+var cpn= srh.clp  ;
+// end - tr
+var trr= srh.tr;
+
+document.getElementById('search')
+.innerHTML=nv /*begin*/+pp+wr.bd+ff +pp+wr.bd1+ff +pp+wr.bd2+ff+/*end*/trr/*begin*/+pp+wr.bd3+ff +pp+wr.bd4+ff +pp+wr.bd5+ff+/*end*/trr/*begin*/+pp+wr.bd6+ff +pp+wr.bd7+ff +pp+wr.bd8+ff+/*end*/trr/*begin*/+pp+wr.bd9+ff +pp+wr.bd10+ff +pp+wr.bd11+ff+/*end*/trr/*begin*/+pp+wr.bd12+ff +pp+wr.bd13+ff +pp+wr.bd14+ff+/*end*/trr/*begin*/+pp+wr.bd15+ff +pp+wr.bd16+ff +pp+wr.bd17+ff+/*end*/trr/*begin*/+pp+wr.bd18+ff +pp+ff +pp+wr.bd19+ff+/*end*/    srh.endtb  ;
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+
+
+var br="<br>"; // important
+
+var d={ 
+ cont:    "   <div id='cont'>    ",
+ head:    "   <div id='head'>    ",
+ rot:     "   <div id='rot'>     ",
+ art:     "   <article>          ",
+ res:     "   <h2>Resultado</h2> ",
+ ejm:     "   <h3>Ejemplo</h3>   ",
+ very:    "   <div id='very'>    ",
+ code:    "   <h2>Codigo</h2>    ",
+ html:    "   <h3>HTML</h3>      ",
+ js:      "   <h3>JS</h3>        ",    
+// start word
+ hr:      "<hr>",
+ div:     "<div>", 
+ grayjs:  "<pre id='gray'>&lt;script>",
+ graybd:  "<pre id='gray'>&lt;body>",  
+// end word
+ endiv:   "</div>", 
+ endart:  "</article>",
+ endgraybd:"&lt;/body></pre>",
+ endgrayjs:"&lt;/script></pre>",    
+}
+// ::::::::::::::::::::::::::::-------------importan--------------------::::::::::::::::::::::::::::
+var modelcode  = d.cont + d.head ;
+var modelcode1 = d.endiv+d.endiv +d.rot+d.art+d.res+d.div+d.ejm+d.very ;
+var modelcode3 = d.endiv+d.endiv+d.endart+d.art+d.code+d.div+d.html+d.graybd  ;
+var modelcode4 = d.endgraybd+d.hr+d.js+d.grayjs;
+var modelcode5 = d.endgrayjs+d.endiv+d.endart+d.endiv+d.hr ;
+// ::::::::::::::::::::::::::::---------------------------------::::::::::::::::::::::::::::
