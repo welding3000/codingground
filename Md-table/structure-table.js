@@ -154,7 +154,19 @@ d31:'		',
 
 
 
-
+<style>
+table {   width:100%;}
+table, th, td {
+    border: 3px solid aqua;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+table tr:nth-child(even) {  background-color: #eee;}
+   
+</style>   
 
 
 
