@@ -1,0 +1,134 @@
+
+<div id="table"></div>
+<div id="head"></div>
+
+<div id="rtn"></div>
+<div id="rtn1"></div>
+<div id="rtn2"></div>
+<div id="rtn3"></div>
+<div id="rtn4"></div>
+<div id="rtn5"></div>
+
+<pre>
+hola mundo
+</pre>
+
+<script>
+
+
+i={
+// fixed   
+  ind    : ' <h2 id="home">Indice</h2>',
+  table  : ' <table style="width:100%"><tr>',
+  td     : ' <td  style="border: 3px solid white;text-align:center;">  ',
+  home   : ' <td colspan="3" style="border: 3px solid white;text-align:center;">  <p><a>Home</a></p></td> ',  
+  exam   : ' <td colspan="3" style="border: 3px solid white;text-align:center;">  <p><a href="#example">Print-Example  </a></p></td> </tr></table>', 
+ // add 
+  tr     : ' </tr><tr> ' ,
+  hr     : ' <hr/> ',
+}
+
+
+
+
+               // Add --- tablet 
+/* ---***---***---***---***---***---***---***---***---***---***---***--- */
+a={
+
+  brd1     : ' <p><a href="#bird1">    hi word       </a></p></td> ',
+  brd10    : ' <p><a href="#bird10">  search      </a></p></td> ',  
+
+}
+
+// begin
+var hm=i.ind+i.hr+i.table+i.home;
+// td-style
+var td= i.td;
+var tr= i.tr;
+var br='<br>';
+
+document.getElementById('table')
+  .innerHTML=
+    hm
+     +tr
+       +td+a.brd1+td+a.brd1+td+a.brd1
+     +tr 
+       +td+a.brd1+td+a.brd1+td+a.brd1
+     +tr 
+       +td+a.brd1+td+a.brd1+td+a.brd1
+     +tr 
+       +td+a.brd1+td+a.brd1+td+a.brd1
+     +tr 
+       +td+a.brd1+td+a.brd1+td+a.brd10
+     +tr 
+    +i.exam
+;
+
+/* ---***---***---***---***---***---***---***---***---***---***---***--- */
+
+
+
+
+
+                    // Add --- Head 
+/* ---***---***---***---***---***---***---***---***---***---***---***--- */
+b ={
+  h:' <h2 id="bird1">&gt;&gt; (Right Shift)</h2> ' , 
+  h1:' <h2 id="bird1">&gt;&gt; (Right Shift)</h2> ' , 
+  h2:' <h2 id="bird1">&gt;&gt; (Right Shift)</h2> ' , 
+  h3:' <h2 id="bird1">&gt;&gt; (Right Shift)</h2> ' , 
+  h4:' <h2 id="bird1">&gt;&gt; (Right Shift)</h2> ' , 
+  h5:' <h2 id="bird1">&gt;&gt; (Right Shift)</h2> ' ,  
+  h6:' <h2 id="bird1">&gt;&gt; (Right Shift)</h2> ' ,
+  h7:' <h2 id="bird1">&gt;&gt; (Right Shift)</h2> ' , 
+  h10:' <h2 id="bird10">&gt;&gt; buscar <h2> ' ,  
+
+}
+
+
+
+document.getElementById('head')
+  .innerHTML= 
+                   b.h 
+               +br 
+                  +b.h1
+               +br 
+                  +b.h2
+               +br 
+                  +b.h3
+               +br 
+                  +b.h4
+               +br 
+                  +b.h5
+               +br 
+                  +b.h10
+;
+/* ---***---***---***---***---***---***---***---***---***---***---***--- */
+
+
+
+
+
+                          // return - number
+/* ---***---***---***---***---***---***---***---***---***---***---***--- */
+var r={  
+  t:'<p><a href="#home">Return</a></p> ',
+  t1:'<p><a href="#home">Return</a></p> ',
+  t2:'<p><a href="#home">Return</a></p> ',
+  t3:'<p><a href="#home">Return</a></p> ',
+}
+
+
+document.getElementById('rtn')
+  .innerHTML= 
+    r.t 
+    +r.t1
+    +r.t2
+    +r.t3
+;
+/* ---***---***---***---***---***---***---***---***---***---***---***--- */
+  
+
+</script>
+
+
